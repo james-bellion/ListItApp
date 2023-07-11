@@ -1,6 +1,6 @@
-// # This is where my database functions will go
+// # This is where my database functions live
 
-// to do import item, itemData from models
+import { Item, ItemData } from '../../models/types'
 
 
 import conection from './connection'
@@ -12,7 +12,7 @@ export function getAllItems(): Promise<Item[]> {
      .select('id', 'item', 'amount', 'price')
 }
 
-export function addItems(item: ItemData): Promise<Item[]> {
+export function addItem(item: ItemData): Promise<Item[]> {
     return db('items')
      .insert(item)
      .returning(['id', 'item', 'amount', 'price'])
@@ -21,5 +21,11 @@ export function addItems(item: ItemData): Promise<Item[]> {
 export function deleteItem(id: number): Promise<number> {
     return db('items')
      .delete()
-     .where({id})
+     .where({ id })
+}
+
+export function updateItem(newItem: ItemData, id: number) {
+    return db('items')
+     .update({ item: newItem })
+     .where({ id })
 }
