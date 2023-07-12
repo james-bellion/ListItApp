@@ -12,7 +12,7 @@ export interface Item extends ItemData {
 
 
 export type Action = 
-    | { type: 'SET_ITEM'; payload: Item[] }
+    | { type: 'SET_ITEMS'; payload: Item[] }
     | { type: 'ADD_ITEM' ; payload: Item }
     | { type: 'DEL_ITEM' ; payload: number }
     | { type: 'UPD_ITEM' ; payload: {id: number; newItem: string} }
