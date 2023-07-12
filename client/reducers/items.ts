@@ -23,5 +23,8 @@ export default function itemsReducer(state = initialState, action: Action) {
                 }
                 return item
             })
+
+        default:
+        return state
     }
 } 
