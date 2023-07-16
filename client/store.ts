@@ -8,12 +8,15 @@ import reducers from './reducers'
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
 export type ThunkAction<T = void> = BaseThunkAction<
   Promise<T>,
   RootState,
   void,
   AnyAction
 >
+
+
 
 export function initialiseStore() {
   return createStore(
