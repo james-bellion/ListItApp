@@ -372,6 +372,24 @@ body {
 
 
 
-.list-item{
-text-decoration: none;
+//////////// LIST COMPONENT //////////////////
+/// 
+
+/* Add the following styles to your CSS file */
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.checkbox-container {
+  flex: 0 0 auto;
+}
+
+.item-content {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
