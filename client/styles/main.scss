@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Instagram Sans Medium';
+  src: url('../Public/Instagram Sans Medium.ttf') format('truetype');
+}
+
 html,
 body {
   margin: 0; /* Remove the default margin */
@@ -7,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
+  font-family: 'Instagram Sans Medium', sans-serif;
 }
 
 body {
@@ -61,7 +67,7 @@ body {
 .btn-style701 {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: transparent;
   color: #fff;
   text-decoration: none;
@@ -130,164 +136,7 @@ body {
 //
 
 
-// .list-container {
-//   width: 95%;
-//   margin: auto;
-//   display: flex;
-// }
 
-// .notebook {
-//   width: 600px;
-//   min-height: 100vh;
-//   padding-top: 20px;
-//   margin: auto;
-//   display: flex;
-//   gap: 10px;
-//   align-items: center;
-//   flex-direction: column;
-//   background-color: white;
-//   box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.5);
-//   margin-top: 20px;
-// }
-
-// .title {
-//   font-size: 1.25rem;
-//   text-align: center;
-// }
-
-// .input-container {
-//   width: 100%;
-//   display: flex;
-//   gap: 10px;
-//   justify-content: center;
-//   align-items: center; /* Center the items vertically */
-// }
-
-// .input-container input {
-//   font-family: inherit;
-//   outline: 0;
-//   border: 0;
-//   width: 65%;
-//   font-size: 1.5rem;
-//   border-bottom: 3px solid lightgray;
-// }
-
-// .input-container button {
-//   cursor: pointer;
-//   font-family: inherit;
-//   outline: 0;
-//   border: 0;
-//   background-color: lightpink;
-//   color: #fff;
-//   //padding: 1px 5px; /* Adjust padding to make the button smaller */
-//   border-radius: 5px;
-//   font-size: 1rem;
-//   transition: background-color 0.3s ease;
-
-//   &:hover {
-//     background-color: #ff88b9;
-//   }
-// }
-
-// /* Media Query for responsiveness */
-// @media screen and (max-width: 768px) {
-//   .notebook {
-//     width: 100%; /* Change the width to fit the smaller screens */
-//     padding: 10px; /* Add padding to provide some spacing */
-//   }
-
-//   .input-container {
-//     flex-direction: column; /* Change to a column layout for smaller screens */
-//     justify-content: center; /* Center the items vertically */
-//     align-items: center; /* Center the items horizontally */
-//   }
-
-//   .input-container input {
-//     width: 100%; /* Set the input field to occupy the full width */
-//   }
-// }
-
-
-
-
-
-
-// .list-container {
-//   width: 95%;
-//   margin: auto;
-//   display: flex;
-// }
-
-// .notebook {
-//   width: 600px;
-//   min-height: 100vh;
-//   padding-top: 20px;
-//   margin: auto;
-//   display: flex;
-//   gap: 10px;
-//   align-items: center;
-//   flex-direction: column;
-//   background-color: white;
-//   box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.5);
-//   margin-top: 20px;
-// }
-
-// .title {
-//   font-size: 1.25rem;
-//   text-align: center;
-// }
-
-// .input-container {
-//   width: 100%;
-//   display: flex;
-//   gap: 10px;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .input-container input {
-//   font-family: inherit;
-//   outline: 0;
-//   border: 0;
-//   flex: 1; /* Use flex: 1 to make the input field occupy remaining space */
-//   font-size: 1.5rem;
-//   border-bottom: 3px solid lightgray;
-// }
-
-// .input-container button {
-//   cursor: pointer;
-//   font-family: inherit;
-//   outline: 0;
-//   border: 0;
-//   background-color: lightpink;
-//   color: #fff;
-//   padding: 8px 16px; /* Adjust padding to make the button smaller */
-//   border-radius: 5px;
-//   font-size: 1rem;
-//   transition: background-color 0.3s ease;
-
-//   &:hover {
-//     background-color: #ff88b9;
-//   }
-// }
-
-// /* Media Query for responsiveness */
-// @media screen and (max-width: 768px) {
-//   .notebook {
-//     width: 100%; /* Change the width to fit the smaller screens */
-//     padding: 10px; /* Add padding to provide some spacing */
-//   }
-
-//   .input-container {
-//     flex-direction: column; /* Change to a column layout for smaller screens */
-//     justify-content: center; /* Center the items vertically */
-//     align-items: center; /* Center the items horizontally */
-//   }
-
-//   .input-container input {
-//     width: 100%; /* Set the input field to occupy the full width */
-//   }
-// }
 
 .list-container {
   width: 95%;
