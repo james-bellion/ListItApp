@@ -84,7 +84,7 @@ function AddItem() {
       <form className="list-form">
         <div className="form-row">
           <label className="add-form-label" htmlFor="item">
-            Item:
+    
           </label>
           <input
             placeholder="Enter item name"

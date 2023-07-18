@@ -309,6 +309,26 @@ body {
   margin-top: 20px;
 }
 
+// blur
+// .notebook {
+//   width: 600px;
+//   min-height: 100vh;
+//   padding-top: 20px;
+//   margin: auto;
+//   display: flex;
+//   gap: 10px;
+//   align-items: center;
+//   flex-direction: column;
+//   /* Set the background to a transparent color (e.g., rgba(255, 255, 255, 0.5)) */
+//   background: rgba(255, 255, 255, 0.76);
+//   border-radius: 16px;
+//   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+//   backdrop-filter: blur(20px); /* Add the backdrop-filter with a blur value */
+//   -webkit-backdrop-filter: blur(20px); /* For Safari support */
+//   margin-top: 20px;
+//   border: 1px solid rgba(255, 255, 255, 1);
+// }
+
 .title {
   font-size: 1.25rem;
   text-align: center;
@@ -374,22 +394,33 @@ body {
 
 //////////// LIST COMPONENT //////////////////
 /// 
-
-/* Add the following styles to your CSS file */
 .list-item {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.checkbox-container {
-  flex: 0 0 auto;
-}
-
 .item-content {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Align the delete button to the right */
   gap: 10px;
 }
 
+
+#del-btn {
+  cursor: pointer;
+  width: 1em; /* Adjust the width as needed */
+  height: 1em; /* Adjust the height as needed */
+  vertical-align: middle; /* Align the image vertically with the text */
+}
+
+
+
+
+
+
+
+
+  
