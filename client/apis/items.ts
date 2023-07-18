@@ -26,7 +26,7 @@ export async function postItem(item: ItemData) {
 
 export async function patchListItem(id: number, newItem: string) {
        //console.log(typeof id, typeof newItem)
-    await request.patch(`${itemsUrl}/${id}`).send({ rating: newItem })
+    await request.patch(`${itemsUrl}/${id}`).send({ item: newItem })
     // * e.g. api/v1/items/4
   }
 
