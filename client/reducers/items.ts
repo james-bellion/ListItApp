@@ -1,7 +1,7 @@
 
 
 import { Item, Action } from "../../models/types";
-import { SET_ITEMS, DEL_ITEM, ADD_ITEM, UPD_ITEM, TOGGLE_ITEM } from '../actions/items'
+import { SET_ITEMS, DEL_ITEM, ADD_ITEM, UPD_ITEM, TOGGLE_ITEM,  } from '../actions/items'
 
 const initialState = [] as Item[]
 

@@ -19,10 +19,6 @@ export async function postItem(item: ItemData) {
   return res.body
 }
 
-// updating
-// export async function patchItem(id: number, newItem: string) {
-//   await request.patch(`${itemsUrl}/${id}`).send({ item: newItem })
-// }
 
 export async function patchListItem(id: number, newItem: string) {
        //console.log(typeof id, typeof newItem)
@@ -34,6 +30,27 @@ export async function patchItem(id: number, newItem: string, completed: boolean)
     await request.patch(`${itemsUrl}/${id}`).send({ item: newItem, completed });
   }
   
+
+ 
+  // export async function patchItemCompleted(id: number, completed: boolean) {
+  //   await request.patch(`${itemsUrl}/${id}/completed`).send({ completed })
+  // }
+
+  // export async function patchItemCompleted(id: number, completed: boolean) {
+  //   await request.patch(`${itemsUrl}/${id}/completed`).send({ completed });
+  // }
+
   export async function patchItemCompleted(id: number, completed: boolean) {
-    await request.patch(`${itemsUrl}/${id}/completed`).send({ completed })
+    await request.patch(`${itemsUrl}/${id}/completed`).send({ compleated: completed });
   }
+
+
+
+
+
+
+
+
+
+
+
