@@ -4,22 +4,27 @@ import { useAppDispatch } from '../hooks/hooks'
 import { useEffect } from 'react'
 import * as itemsActions from "../actions/items" 
 
+import { Outlet } from 'react-router-dom'
+
+
 function App() {
 
-  const dispatch = useAppDispatch()
+  
 
-  useEffect(() => {
-    dispatch(itemsActions.getItemsThunk())
-  }, [dispatch])
+  // useEffect(() => {
+  //   dispatch(itemsActions.getItemsThunk())
+  // }, [dispatch])
 
 
   return (
     <>
-      <header className="header">
+      {/* <header className="header">
         <h1>My Collection</h1>
       </header>
       <AddItem />
-      <List />
+      <List /> */}
+
+      <Outlet />
      
     </>
   )

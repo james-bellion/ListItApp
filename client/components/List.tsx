@@ -4,12 +4,16 @@ import { RootState } from '../store';
 import { Item, ItemData } from '../../models/types';
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 import * as action from '../actions/items';
+import { useNavigate } from 'react-router-dom'
+import AddItem from './AddItem';
 
 function List() {
   const [formData, setFormData] = useState<string>('');
   const [showForm, setShowForm] = useState(false);
   const dispatch = useAppDispatch();
   const itemsArr = useAppSelector((state: RootState) => state.items) as Item[];
+
+  const navigate = useNavigate()
 
   // Handle checkbox change with a default value for 'completed' to avoid uncontrolled input warning
   const handleCheckboxChange = (id: number, completed: boolean | undefined) => {
@@ -37,8 +41,11 @@ function List() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className='list-container'>
+      <div className='notebook'>
+
       <h1>My List</h1>
+      <AddItem />
       <ul>
         {itemsArr.map((item) => (
           <li key={item.id}>
@@ -77,6 +84,10 @@ function List() {
           </li>
         ))}
       </ul>
+
+      </div>
+      
+      <button onClick={() => navigate('/')}>home</button>
     </div>
   );
 }

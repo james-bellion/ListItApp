@@ -1,5 +1,6 @@
 import express from 'express'
 
+
 // import my db function(s)
 import * as db from '../db/db'
 
@@ -52,17 +53,17 @@ router.post('/', async (req, res) => {
  // route for changing the boolean value 
 // PATCH /api/v1/items/:id/completed
 router.patch('/:id/completed', async (req, res) => {
-  const id = +req.params.id;
+  const id = +req.params.id
   const completed = req.body.compleated; // Ensure the property name matches the column name
 
   try {
     await db.updateCompletedValue(id, completed);
-    res.sendStatus(200);
+    res.sendStatus(200)
   } catch (err) {
     console.error('Error updating completed value:', err);
-    res.sendStatus(500);
+    res.sendStatus(500)
   }
-});
+})
 
 
 
