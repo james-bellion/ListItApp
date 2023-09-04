@@ -3,6 +3,7 @@ interface Props {
   children: React.ReactNode
 }
 
+// hook
 const useIsAuthenticated = () => {
   const { isAuthenticated } = useAuth0()
   return isAuthenticated
